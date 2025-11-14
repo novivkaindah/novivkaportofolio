@@ -1,0 +1,136 @@
+/* ========== GAYA UMUM ========== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fff7e0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ========== WADAH UTAMA ========== */
+.container {
+  background-color: #fff7e0;
+  border-radius: 20px;
+  padding: 40px;
+  width: 85%;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Efek muncul lembut */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== DEKORASI BINTANG ========== */
+.container::before {
+  content: "★";
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  font-size: 70px;
+  color: #f8cfcf;
+  opacity: 0.3;
+}
+.container::after {
+  content: "★";
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  font-size: 80px;
+  color: #f8cfcf;
+  opacity: 0.2;
+}
+
+/* ========== KONTEN ========== */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.content.column {
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ========== FOTO ========== */
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ========== TEKS ========== */
+.text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text h2 {
+  font-size: 28px;
+  color: #3e2a2a;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2d2d2d;
+}
+
+/* ========== TOMBOL ========== */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #f8cfcf;
+  color: #3e2a2a;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #e6b9a6;
+  transform: scale(1.05);
+}
+
+/* ========== SERTIFIKAT ========== */
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.certificates img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+/* ========== BIODATA ========== */
+.bio {
+  line-height: 1.8;
+  font-size: 16px;
+}
+.bio b {
+  color: #3e2a2a;
+}
